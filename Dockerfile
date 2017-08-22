@@ -2,7 +2,7 @@
 #T00045139 - Edilberto Marrugo Gutierrez
 FROM ubuntu:14.04 
 #Instalare una aplicacion que solo necesita Mysql, php5 y Nginx 
-#Nginx2 es mi servidor web lo dejare por defecto
+#Nginx es mi servidor web lo dejare por defecto
 # php5: Lenguaje PHP
 # php5-mysql: Driver de MySql para poder usar PHP
 
