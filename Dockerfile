@@ -4,5 +4,5 @@
 FROM ubuntu:14.04 
 #MAINTAINER T00045139 
 RUN apt-get updtae && apt-get install -y nginx 
-RUN echo 'T00045139-Edilberto Marrugo Gutiérrez' >/usr/share/ngin/html/index.html 
+RUN echo 'T00045139-Edilberto Marrugo GutiÃ©rrez' >/usr/share/ngixn/html/index.html 
 EXPOSE 80 
