@@ -1,14 +1,14 @@
 #Version: 1
 #T00045139 - Edilberto Marrugo Gutierrez
 FROM ubuntu:14.04 
-#Instalare una aplicacion que solo necesita Mysql, php5 y apache2
-#Apache2 es mi servidor web lo dejare por defecto
+#Instalare una aplicacion que solo necesita Mysql, php5 y Nginx 
+#Nginx2 es mi servidor web lo dejare por defecto
 # php5: Lenguaje PHP
 # php5-mysql: Driver de MySql para poder usar PHP
 
 #MAINTAINER T00045139 
 RUN apt-get update && apt-get -y install \
-    apache2 \
+    nginx \
     php5 \
     php5-mysql
     
@@ -22,5 +22,8 @@ RUN echo 'mysql-server mysql-server/root_password password root' | \
 #instalo mysql-server    
 RUN apt-get install -qqy mysql-server
 
-#puerto 80 HTTP osea Apache2
+#Meto esta sentacia dentro del contenedor
+RUN echo'T00045139 - Edilberto Marrugo Gutiérrez' >/usr/share/nginx/html/index.html
+
+#puerto 80 HTTP el que usa Nginx
 EXPOSE 80
